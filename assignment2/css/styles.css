@@ -1,0 +1,41 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #1d1d1d;
+  font-family: serif;
+}
+
+#header-nav {
+  background-color: #343a40;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand h1 {
+  color: #fd7e14;
+  margin: 5px;
+}
+
+.navbar-toggle {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+#nav-list li {
+  border : 1px solid #fd7e14;
+  color: #fd7e14;
+}
+.navbar-collapse {
+  border: 0px;
+}
+
+#chicken , #beef, #sushi {
+  border: 1px solid #2e2e2e;
+  background-color: #2e2e2e;
+  height: 2000px;
+  margin-top: 20px;
+}
