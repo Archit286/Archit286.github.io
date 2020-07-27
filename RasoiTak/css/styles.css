@@ -29,9 +29,9 @@ a:hover {
 	background-color: #222222;
 }
 
-.nav-link {
+.nav-link, .navbar-brand {
 	color: #fd7e14 !important;
-	font-size: 1.2em;
+	font-size: 1em;
 	padding: 0px;
 }
 
@@ -40,8 +40,12 @@ a:hover {
 	padding-left: 3px;
 }
 
+.search {
+	margin-bottom: 15px;
+}
+
 /* Style the search field */
-.search input[type=text] {
+.search input {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
@@ -50,10 +54,6 @@ a:hover {
   height: 40px;
   background: #222222;
   color: white;
-}
-
-.search {
-	float: right;
 }
 
 /* Style the submit button */
@@ -243,7 +243,9 @@ footer .row {
 }
 /*SM*/
 @media (min-width: 576px) {
-
+	.side-nav {
+		text-align: center;
+	}
 }
 /*MD*/
 @media (min-width: 768px) {
@@ -253,6 +255,12 @@ footer .row {
 	#home-tile span {
 		font-size: 1em;
 	}
+	.search button {
+		width: 30%;
+	}
+	.search input {
+		width: 70%;
+	}
 }
 /*LG*/
 @media (min-width: 992px) {
@@ -261,6 +269,12 @@ footer .row {
 	}
 	#home-tile span {
 		font-size: 1.7em;
+	}
+	.search button {
+		width: 20%;
+	}
+	.search input {
+		width: 80%;
 	}
 }
 /*XL*/

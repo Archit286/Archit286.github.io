@@ -11,43 +11,37 @@
   	<header>
   		<a href="index.html"><h1 class="title">Rasoi Tak</h1></a>
   	</header>
-	<nav class="navbar navbar-expand-lg sticky-top">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggle">
-      		<span><i class="fa fa-bars" aria-hidden="true"></i></span>
-    	</button>
-		<ul class="navbar-nav nav-fill nav-pills w-100 navbar-collapse collapse" id="navbarToggleExternalContent">
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">
-					<i class="fa fa-home" aria-hidden="true" style="font-size: 24px"></i>Home
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" onclick="searchMe('Quencher')">Quencher</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" onclick="searchMe('Snacks')">Snacks</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" onclick="searchMe('Breakfast')">Breakfast</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" onclick="searchMe('Main Course')">Main Course</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" onclick="searchMe('Cuisines')">Cuisines</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" onclick="searchMe('Dessert')">Dessert</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" onclick="searchMe('Fast Recipes')">Fast Recipes</a>
-			</li>
-		</ul>
-		<div class="search">
-			<input type="text" placeholder="Search.." name="search" id="myInput">
-			<button type="submit" onclick="searchMe(document.getElementById('myInput').value)">
-				<i class="fa fa-search"></i>
-			</button>
+	<nav class="navbar navbar-expand-md sticky-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<i class="fa fa-home" aria-hidden="true"></i> Home
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleContent" aria-controls="navbarToggleContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggle">
+      			<span><i class="fa fa-bars" aria-hidden="true"></i></span>
+    		</button>
+			<ul class="navbar-nav nav-fill nav-pills w-100 navbar-collapse collapse" id="navbarToggleContent">
+				<li class="nav-item">
+					<a class="nav-link" href="#" onclick="searchMe('Quencher')">Quencher</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" onclick="searchMe('Snacks')">Snacks</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" onclick="searchMe('Breakfast')">Breakfast</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" onclick="searchMe('Main Course')">Main Course</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" onclick="searchMe('Cuisines')">Cuisines</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" onclick="searchMe('Dessert')">Dessert</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" onclick="searchMe('Fast Recipes')">Fast Recipes</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
   	<div class="container">
@@ -59,6 +53,12 @@
 	 			</div>
 			</div>
 			<div class="col-md-3 side-nav">
+				<div class="search">
+					<input type="text" placeholder="Search.." name="search" id="myInput">
+					<button type="submit" onclick="searchMe(document.getElementById('myInput').value)">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
 			   	<h3>About Me</h3>
 			   	<p>
 			   		Rasoi Tak is a food discovery platform that connects people who love to cook or like to learn new recipes. Rasoi Tak finds delicious food from the Home chef's kitchen and gives them an opportunity to share their expertise and skills on various social. learn interesting recipes and share your feedback with us.
