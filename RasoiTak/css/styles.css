@@ -17,19 +17,6 @@ a:hover {
 	color: white;
 }
 /*Header Start*/
-/*.navbar-brand h1 {
-	font-size: 4.5rem;
-	color: #fd7e14;
-}
-
-header {
-	background-color: #111;
-}
-
-.navbar-header {
-	width: 100%;
-}
-*/
 
 .title {
 	text-align: center;
@@ -65,6 +52,10 @@ header {
   color: white;
 }
 
+.search {
+	float: right;
+}
+
 /* Style the submit button */
 .search button {
   float: left;
@@ -88,6 +79,14 @@ header {
   content: "";
   clear: both;
   display: table;
+}
+
+.navbar-toggler {
+	border: 2px solid white;
+}
+
+.fa-bars {
+	color: white;
 }
 /*Header Ends*/
 
