@@ -17,7 +17,7 @@ a:hover {
 	color: white;
 }
 /*Header Start*/
-.navbar-brand h1 {
+/*.navbar-brand h1 {
 	font-size: 4.5rem;
 	color: #fd7e14;
 }
@@ -29,10 +29,28 @@ header {
 .navbar-header {
 	width: 100%;
 }
+*/
 
-.search {
-	margin-top: 30px;
-	float: right;
+.title {
+	text-align: center;
+	font-size: 5em;
+	color: #fd7e14;
+}
+
+.navbar {
+	color: #fd7e14;
+	background-color: #222222;
+}
+
+.nav-link {
+	color: #fd7e14 !important;
+	font-size: 1.2em;
+	padding: 0px;
+}
+
+.nav-item {
+	padding-right: 3px;
+	padding-left: 3px;
 }
 
 /* Style the search field */
@@ -42,15 +60,16 @@ header {
   border: 1px solid grey;
   float: left;
   width: 80%;
-  height: 50px;
-  background: #f1f1f1;
+  height: 40px;
+  background: #222222;
+  color: white;
 }
 
 /* Style the submit button */
 .search button {
   float: left;
   width: 20%;
-  height: 50px;
+  height: 40px;
   padding: 10px;
   background: #fe7f15;
   color: white;
