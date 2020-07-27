@@ -107,10 +107,6 @@ header {
   opacity: .8;
 }
 
-#main-home-tile span {
-	font-size: 3.2em;
-}
-
 /*Home Page Ends*/
 
 /*Side Nav*/
@@ -217,3 +213,43 @@ footer .row {
 }
 
 /*Post body ends*/
+
+/*Media Queries*/
+/*XS*/
+@media (max-width: 576px) {
+ 	.col-xs-2 {
+ 		-ms-flex: 0 0 16.666667%;
+    	flex: 0 0 16.666667%;
+    	max-width: 16.666667%;
+ 	}
+}
+/*SM*/
+@media (min-width: 576px) {
+
+}
+/*MD*/
+@media (min-width: 768px) {
+ 	#main-home-tile span {
+		font-size: 2em;
+	}
+	#home-tile span {
+		font-size: 1em;
+	}
+}
+/*LG*/
+@media (min-width: 992px) {
+	#main-home-tile span {
+		font-size: 3.2em;
+	}
+	#home-tile span {
+		font-size: 1.7em;
+	}
+}
+/*XL*/
+@media (min-width: 1200px) {
+ 	#home iframe {
+ 		width: 560px; 
+ 		height: 315px;
+ 	}
+
+}
