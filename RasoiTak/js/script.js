@@ -74,8 +74,11 @@ $ajaxUtils.sendGetRequest(
   homeHtml,
   function (responseText) {
   	for (var i = 0; i < 7; i++) {
+
   		var text = "Title " + i;
+      var img = "Image " + i;
   		responseText = insertProperty(responseText, text , popular[i]);
+      responseText = insertProperty(responseText, img , database[i].image);
   	}
     document.querySelector("#home")
       .innerHTML = responseText;
@@ -104,6 +107,7 @@ $ajaxUtils.sendGetRequest(
     for (var i = 0; i < database.length; i++) {
       if (database[i].Title === title) {
         responseText = insertProperty(responseText, "Post Title", database[i].Title);
+        responseText = insertProperty(responseText, "Image", database[i].image);
         responseText = insertProperty(responseText, "Caption", database[i].Caption);
         responseText = insertList(responseText, "Ingredients", database[i].Ingredients);
         responseText = insertProperty(responseText, "embedded", database[i].Video);
@@ -116,11 +120,12 @@ $ajaxUtils.sendGetRequest(
   false);
 };
 
-var loadItem = function(title, cap) {
+var loadItem = function(title, cap, img) {
 $ajaxUtils.sendGetRequest(
   list,
   function (responseText) {
     responseText = insertProperty(responseText, "Post Title", title);
+    responseText = insertProperty(responseText, "Image", img);
     responseText = insertProperty(responseText, "Caption", cap);
     document.querySelector("#home")
       .innerHTML += responseText;
@@ -140,11 +145,11 @@ var searchMe = function(str) {
       return hit == str;
     });
     if(head === str) {
-      loadItem(database[i].Title, database[i].Caption);
+      loadItem(database[i].Title, database[i].Caption, database[i].image);
       flag=1;
     }
     else if(tag === str) {
-      loadItem(database[i].Title, database[i].Caption);
+      loadItem(database[i].Title, database[i].Caption, database[i].image);
       flag=1;
     }
   }
