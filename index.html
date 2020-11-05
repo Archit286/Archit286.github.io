@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Form It!!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Basic Details Form</h1>
+
+      <form>
+        <div class="form-group row">
+          <label for="name" class="col-2">Name</label>
+          <div class="col-1"></div>
+          <input type="text" class="form-control col-8" id="name" />
+          <div class="col-1"></div>
+        </div>
+        <div class="form-group row">
+          <label for="rollno" class="col-2">Roll No.</label>
+          <div class="col-1"></div>
+          <input type="number" class="form-control col-8" id="rollno" />
+          <div class="col-1"></div>
+        </div>
+        <div class="form-group row">
+          <label for="year" class="col-2">Year</label>
+          <div class="col-1"></div>
+          <select class="form-control col-8" id="year">
+            <option>---Select Your Year---</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+          <div class="col-1"></div>
+        </div>
+        <div class="form-group row">
+          <label for="branch" class="col-2">Branch</label>
+          <div class="col-1"></div>
+          <select class="form-control col-8" id="branch">
+            <option>---Select Your Branch---</option>
+            <option>Computer Science and Engineering</option>
+            <option>Computer Engineering</option>
+            <option>Computer Science and Business Systems</option>
+            <option>Electronics and Computer Engineering</option>
+            <option>Electronics and Communication Engineering</option>
+            <option>Electronics and Instrumentation Engineering</option>
+            <option>Electrical Engineering</option>
+            <option>Mechanical Engineering</option>
+            <option>Mechanical Production Engineering</option>
+            <option>Mechatronics Engineering</option>
+            <option>Chemical Engineering</option>
+            <option>Bio-Medical Engineering</option>
+            <option>Bio-Tech Engineering</option>
+          </select>
+          <div class="col-1"></div>
+        </div>
+        <div class="form-group row">
+          <label for="batch" class="col-2">Batch</label>
+          <div class="col-1"></div>
+          <input type="text" class="form-control col-8" id="batch" />
+          <div class="col-1"></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      </form>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

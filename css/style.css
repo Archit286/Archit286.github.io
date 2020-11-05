@@ -1,0 +1,30 @@
+body {
+  background-color: lightgrey;
+  color: #fff;
+}
+
+.container {
+  background-color: #343a40;
+  height: 100vh;
+}
+
+h1 {
+  color: lightgrey;
+  padding: 2rem;
+}
+
+.row {
+  padding: 1rem;
+}
+
+form {
+  font-size: larger;
+}
+
+option {
+  font-size: large;
+}
+
+button {
+  margin: 1rem;
+}
